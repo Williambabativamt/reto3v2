@@ -6,16 +6,20 @@ package com.example.demo.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
 /**
  *
  * @author brenk
  */
+@Entity
+@Table(name = "calificacion")
 public class Administrador {
     private String name; 
     private String email;

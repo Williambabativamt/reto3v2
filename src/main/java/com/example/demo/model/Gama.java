@@ -26,7 +26,7 @@ public class Gama {
     private String name;
     private String description;
     
-    @OneToMany(mappedBy = "gama", fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY, orphanRemoval = false)
     private List<Habitacion> listHabitaciones = new ArrayList<>();
     
 

@@ -29,10 +29,10 @@ public class Cliente {
     private int age;
     private String password;
     
-    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY, orphanRemoval = false)
     private List<Mensaje> listMensaje = new ArrayList<>();
     
-    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY, orphanRemoval = false)
     private List<Reserva> listReserva = new ArrayList<>();
    
     @Id

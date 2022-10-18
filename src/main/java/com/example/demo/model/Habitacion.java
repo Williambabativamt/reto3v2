@@ -33,10 +33,10 @@ public class Habitacion {
     
     private String description;
     
-    @OneToMany(mappedBy = "habitacion", fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "room", fetch = FetchType.LAZY, orphanRemoval = false)
     private List<Mensaje> listMensaje = new ArrayList<>();
     
-    @OneToMany(mappedBy = "habitacion", fetch = FetchType.LAZY, orphanRemoval = false)
+    @OneToMany(mappedBy = "room", fetch = FetchType.LAZY, orphanRemoval = false)
     private List<Reserva> listReserva = new ArrayList<>();
     
     @ManyToOne
